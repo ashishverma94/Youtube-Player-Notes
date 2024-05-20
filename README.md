@@ -22,7 +22,7 @@
 ![Screenshot 2024-05-20 084305](https://github.com/ashishverma94/Youtube-Player-Notes/assets/82448727/6dfcaa22-fb5e-4643-8ced-e8fa6e4df4ef)
 
 ### Video Id Popup
-![Screenshot 2024-05-20 084404](https://github.com/ashishverma94/Youtube-Player-Notes/assets/82448727/d7a3b21f-1bd3-489e-bf88-3e676561e92f)
+![Screenshot 2024-05-20 084348](https://github.com/ashishverma94/Youtube-Player-Notes/assets/82448727/653074d9-06e8-4cdc-86dd-011a373f053e)
 
 ### Editor
 ![Screenshot 2024-05-20 084404](https://github.com/ashishverma94/Youtube-Player-Notes/assets/82448727/fe3ecd8c-3bbe-457d-b2fe-57381be543c4)
