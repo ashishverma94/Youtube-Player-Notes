@@ -19,8 +19,8 @@
 
 ## Screenshot of project:
 
-![Screenshot (178)](https://github.com/ashishverma94/Manufac_Assignment/assets/82448727/3c9582e8-441d-4f08-bb40-3b32434de02c)
+![Screenshot 2024-05-20 084404](https://github.com/ashishverma94/Youtube-Player-Notes/assets/82448727/d7a3b21f-1bd3-489e-bf88-3e676561e92f)
 
 ## Responsiveness of website:
 
-![Screenshot (179)](https://github.com/ashishverma94/Manufac_Assignment/assets/82448727/831e4ef5-2efb-40c3-8ac7-c5488fbd3d5f)
+![Screenshot (225)](https://github.com/ashishverma94/Youtube-Player-Notes/assets/82448727/42e3d1a2-461f-4c71-9692-e319a573a5df)
