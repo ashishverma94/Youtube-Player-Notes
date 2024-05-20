@@ -1,18 +1,11 @@
-# Manufac_Assignment Project
-
-## Description
-This is a React project built with Create React App.
-
-## Prerequisites
-- Node.js installed on your machine ([Download Node.js](https://nodejs.org/))
-- Yarn installed on your machine ([Download Yarn](https://yarnpkg.com/))
+# YouTube Notes Project
 
 ## Installation
 1. Clone this repository to your local machine using:
    ```sh
-   git clone https://github.com/ashishverma94/Manufac_Assignment.git
+   git clone https://github.com/ashishverma94/Youtube-Player-Notes.git
    ```
-3. Open Manufac_Assignment folder in your vscode
+3. Open Video-Player-Notes folder in your vscode
 4. Install dependencies using Yarn:
    ```sh
    npm install
