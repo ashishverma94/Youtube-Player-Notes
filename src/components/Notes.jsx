@@ -5,13 +5,12 @@ import { getDateString, getTimestampString } from "../utils/functions";
 
 const Notes = ({ videoId, player }) => {
   const [notes, setNotes] = useState([]);
+  const [image, setImage] = useState("");
   const [content, setContent] = useState("");
   const [isEdited, setIsEdited] = useState(false);
   const [editedIndex, setEditedIndex] = useState(0);
   const [noteContent, setNoteContent] = useState("");
   const [openEditor, setOpenEditor] = useState(false);
-
-  const [image, setImage] = useState('') ;
 
   useEffect(() => {
     const savedNotes =
@@ -32,7 +31,7 @@ const Notes = ({ videoId, player }) => {
         id: Date.now(),
         timestamp: currentTime,
         content: noteContent,
-        image:image,
+        image: image,
         date: new Date().toLocaleString(),
       };
       setNotes([...notes, newNote]);
@@ -41,10 +40,10 @@ const Notes = ({ videoId, player }) => {
       const savedNotes =
         JSON.parse(localStorage.getItem(`notes-${videoId}`)) || [];
       savedNotes[editedIndex].content = noteContent;
-      savedNotes[editedIndex].image = image ;
+      savedNotes[editedIndex].image = image;
       setNotes(savedNotes);
       setIsEdited(false);
-      setContent('') ;
+      setContent("");
     } else {
       alert("Player is not ready yet.");
     }
@@ -69,6 +68,11 @@ const Notes = ({ videoId, player }) => {
     setOpenEditor(true);
   };
 
+  const handleSeekTimestamp = (time) => {
+    window.scrollTo(0, 0);
+    player.seekTo(time);
+  };
+
   return (
     <>
       <div className=" w-[80%]">
@@ -89,8 +93,7 @@ const Notes = ({ videoId, player }) => {
                 <div className=" font-bold  w-[25px] h-[25px] border-[2px] border-black rounded-full  flex items-center justify-center">
                   +
                 </div>
-                <span>
-                Add Note</span>
+                <span>Add Note</span>
               </button>
             </div>
           </div>
@@ -109,7 +112,8 @@ const Notes = ({ videoId, player }) => {
                       color: "blue",
                       marginLeft: "3px",
                     }}
-                    onClick={() => player.seekTo(note?.timestamp)}
+                    //  onClick={() => player.seekTo(note?.timestamp)}
+                    onClick={() => handleSeekTimestamp(note?.timestamp)}
                   >
                     {getTimestampString(note?.timestamp)}
                   </span>
@@ -149,7 +153,8 @@ const Notes = ({ videoId, player }) => {
           </div>
         </div>
 
-        <input style={{display:"none"}}
+        <input
+          style={{ display: "none" }}
           type="text"
           value={noteContent}
           onChange={(e) => setNoteContent(e.target.value)}
